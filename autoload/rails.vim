@@ -3191,6 +3191,7 @@ function! s:BufSyntax()
         syn keyword rubyRailsARClassMethod attr_accessible attr_protected establish_connection set_inheritance_column set_locking_column set_primary_key set_sequence_name set_table_name
         syn keyword rubyRailsARValidationMethod validate validate_on_create validate_on_update validates_acceptance_of validates_associated validates_confirmation_of validates_each validates_exclusion_of validates_format_of validates_inclusion_of validates_length_of validates_numericality_of validates_presence_of validates_size_of validates_uniqueness_of
         syn keyword rubyRailsMethod logger
+        syn match rubyRailsARActsMethod "acts_as_\w\+"
       endif
       if t =~ '^model-aro\>'
         syn keyword rubyRailsARMethod observe
@@ -3353,6 +3354,7 @@ function! s:HiDefaults()
   hi def link rubyRailsARCallbackMethod       rubyRailsARMethod
   hi def link rubyRailsARClassMethod          rubyRailsARMethod
   hi def link rubyRailsARValidationMethod     rubyRailsARMethod
+  hi def link rubyRailsARActsMethod           rubyRailsARMethod
   hi def link rubyRailsARMethod               rubyRailsMethod
   hi def link rubyRailsRenderMethod           rubyRailsMethod
   hi def link rubyRailsHelperMethod           rubyRailsMethod
